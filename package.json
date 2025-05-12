@@ -18,8 +18,11 @@
     "react-dom": "^19.0.0",
     "react-form-stepper": "^2.0.3",
     "react-icons": "^5.5.0",
+    "react-slick": "^0.30.3",
     "react-vertical-timeline-component": "^3.5.3",
-    "sweetalert2": "^11.21.0"
+    "slick-carousel": "^1.8.1",
+    "sweetalert2": "^11.21.0",
+    "swiper": "^11.2.6"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

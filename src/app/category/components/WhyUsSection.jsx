@@ -46,7 +46,7 @@ export default function WhyUsSection() {
 
         {/* Left: الصورة */}
         <div className="md:w-1/2 flex  md:justify-end ">
-          <div className="w-[500px] h-[500px] md:w-[500px] md:h-[500px] md:rounded-full overflow-hidden border-4 border-yellow-400 shadow-lg   md:absolute -left-10 -bottom-6">
+          <div className="w-[400px] h-[400px] md:w-[500px] md:h-[500px] md:rounded-full overflow-hidden border-4 border-yellow-400 shadow-lg   md:absolute -left-10 -bottom-6">
             <Image
               src="/Rectangle 19.svg" // استبدلها بالصورة الفعلية
               alt="شاحنة"

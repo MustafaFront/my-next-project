@@ -94,7 +94,7 @@ const HowItWorksFinal = () => {
                   }}
                   contentArrowStyle={{ display: "none" }}
                   iconStyle={{
-                    background: "##FDC700",
+                    background: "#FDC700",
                     color: "#fff",
                     boxShadow: "0 0 0 4px #fff, 0 3px 0 rgba(0,0,0,0.1)",
                     fontSize: "20px",
