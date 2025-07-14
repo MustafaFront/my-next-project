@@ -1,14 +1,13 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Cairo } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "sonner";
+import { CartAnimationProvider } from "@/contexts/CartAnimationContext";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+// خط Cairo فقط
+const cairo = Cairo({
+  variable: "--font-cairo",
+  subsets: ["arabic", "latin"],
+  weight: ["400", "700"], // أو أي أوزان تحتاجها
 });
 
 export const metadata = {
@@ -19,10 +18,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${cairo.variable} antialiased`}>
+        <CartAnimationProvider>
         {children}
+
+        </CartAnimationProvider>
+        <Toaster richColors position="top-center" />
       </body>
     </html>
   );
